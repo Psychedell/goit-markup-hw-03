@@ -41,8 +41,6 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid tomato;
-   
 }
 
 .link,
@@ -157,11 +155,6 @@ img {
     color: var(--titile-text-color);
 }
 
-.section-title-photos,
-.section-title-photos-career {
-    padding-left: 20px;
-}
-
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -268,6 +261,7 @@ img {
 }
 
 
+
 .list-photos {
     display: flex;
     flex-wrap: wrap;
@@ -279,8 +273,17 @@ img {
     width: 370;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+    margin-top: 0;
+    display: block;
 }
+
+.container-photo-text {
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+    padding: 20px 24px;
+}
+
+
 
 /* footer */
 .logo.foot {
