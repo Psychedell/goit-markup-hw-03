@@ -18,6 +18,19 @@
     font-weight: 400;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 img {
     display: block;
 }
@@ -36,7 +49,7 @@ img {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -65,7 +78,10 @@ img {
 .container-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;;
+}
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .site-nav-link {
@@ -181,11 +197,13 @@ img {
 .features {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin-left: -30px;
 }
 
 .features .item {
     width: 270px;
+    margin-left: 30px;
 }
 
 .features .features-title {
@@ -212,22 +230,30 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
+    padding-bottom: 10px;   
 }
 
 .section-title-profession {
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
-    margin-bottom: 30px;
 }
 
 .list-team {
     display: flex;
-    justify-content: space-between;
+    margin-left: -30px;
+}
+
+.container-team {
+    display: inline;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .list-team .item {
+    background-color: var(--primary-bg-color);
+    width: 270px;
+    margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -236,7 +262,7 @@ img {
 
 /* portfolio photos */
 .photo-nav.list {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .photo-nav {
@@ -253,14 +279,13 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .section-title-photos-career {
     font-size: 16px;
     line-height: 1.88;
 }
-
-
 
 .list-photos {
     display: flex;
@@ -283,14 +308,12 @@ img {
     padding: 20px 24px;
 }
 
-
-
 /* footer */
 .logo.foot {
     margin-bottom: 20px;
 }
 
-.container.footer {
+.container-footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -309,15 +332,21 @@ img {
 
 .footer-logo-address,
 .address-phone-mail {
+    display: inline-block;
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
+    margin-bottom: 9px;
 }
+
+.url {
+    margin-bottom: -9px;
+}
+
 
 .footer,
 .hero {
     background-color: #2F303A;
-    display: block;
 }
 
 /* buttons */
