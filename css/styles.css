@@ -313,9 +313,10 @@ img {
 /* footer */
 .logo.foot {
     margin-bottom: 20px;
+    margin-right: 0;
 }
 
-.container-footer {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -334,17 +335,16 @@ img {
 
 .footer-logo-address,
 .address-phone-mail {
-    display: inline-block;
+    display: block;
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
     margin-bottom: 9px;
 }
 
-.url {
-    margin-bottom: -9px;
+.address-phone-mail:last-child {
+    margin-bottom: 0;
 }
-
 
 .footer,
 .hero {
